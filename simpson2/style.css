@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(255, 214, 9, 0.973);
+}
+
+#contenaire{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+}
+
+header{
+    background-color: rgb(2, 131, 206);
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    padding: 20px;
+}
+
+header img{
+    width: 100%;
+    vertical-align: top;
+}
+
+nav{
+    background-color: rgb(2, 131, 206);
+    border-bottom: 2px dotted white;
+    border-top: 2px solid white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10%;
+}
+
+a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px;
+}
+
+#article-and-aside{
+    display: flex;
+    flex-direction: row;
+}
+
+article{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    color:  rgba(255, 214, 9, 0.973);
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+article p{
+    text-align: justify;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#movie-posters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+h4{
+    font-style: italic;
+    text-align: center;
+}
+
+aside{
+    width: 30%;
+    background-color:rgb(2, 131, 206);
+    color: white;
+    text-align: center;
+    text-align: justify ;
+    padding: 15px;
+    margin: 30px;
+}
+
+aside figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#groening{
+    width: 200px;
+    border: 2px solid white;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+footer{
+    background-color: rgb(2, 131, 206);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+ /* tablette ----------- */ 
+ @media only screen and (max-device-width : 1024px) {
+    #contenaire{
+        width: 100%;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center ;
+        font-size: 40px;
+    }
+  
+    #article-and-aside{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+    }
+
+    h1{
+        font-size: 60px;
+        padding: 70px;
+        text-align: center;
+    }
+
+    #movie-posters{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    p{
+        text-align: center;
+        text-align: justify;
+    }
+    #movie-poster{
+        padding: 50px;
+    }
+ 
+    aside{
+        width: 70%;
+    }
+
+    #groening{
+        object-position: 50% 50%;
+    }
+
+    h3{
+        padding: 10px;
+        font-size: 50px;
+    }
+
+    h4{
+        padding-bottom:  8px;
+    }
+
+    footer{
+        height: 20%;
+        font-size: 40px;
+    }
+
+ }
+ /* Smartphones (portrait) ----------- */ 
+@media only screen and (max-width : 400px) {
+    #contenaire{
+        width: 100%;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    #article-and-aside{
+        font-size: 20px;
+    }
+    
+    nav{
+        font-size: 25px;
+    }
+
+    h1{
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    p{
+        text-align: center;
+        text-align: justify;
+    }
+    
+    #movie-posters{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+    aside{
+        text-align: center;
+        width: 100%;
+    }
+
+    h3{
+        padding: 10px;
+    }
+
+    h4{
+        padding-bottom: 8px;
+    }
+    footer{
+        height: 10%;
+        font-size: 20px;
+    }
+   
+    }
